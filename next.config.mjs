@@ -35,6 +35,11 @@ const nextConfig = {
 			},
 		],
 	},
+	experimental: {
+		outputFileTracingIncludes: {
+			"/api/**/*": ["./node_modules/**/*.wasm"],
+		},
+	},
 	webpack: (config, { isServer }) => {
 		if (isServer) {
 			// get the current working directory
