@@ -37,7 +37,7 @@ const nextConfig = {
 	},
 	experimental: {
 		outputFileTracingIncludes: {
-			"/api/**/*": ["./node_modules/**/*.wasm"],
+			"/**/*": ["./node_modules/**/*.wasm"],
 		},
 	},
 	webpack: (config, { isServer }) => {
